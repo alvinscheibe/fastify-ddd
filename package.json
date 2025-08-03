@@ -1,0 +1,60 @@
+{
+  "name": "fastify-ddd",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "tsx watch src/server.ts",
+    "build": "tsup src --out-dir build",
+    "start": "node build/server.js",
+    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
+    "lint-staged": "lint-staged",
+    "prepare": "husky",
+    "commit": "git-cz",
+    "cz": "czg",
+    "version": "conventional-changelog -p angular -i CHANGELOG.md -s && git add CHANGELOG.md"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@fastify/cors": "^11.1.0",
+    "dotenv": "^17.2.1",
+    "fastify": "^5.4.0"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^19.8.1",
+    "@commitlint/config-conventional": "^19.8.1",
+    "@commitlint/prompt-cli": "^19.8.1",
+    "@types/node": "^24.1.0",
+    "@typescript-eslint/eslint-plugin": "^8.38.0",
+    "@typescript-eslint/parser": "^8.38.0",
+    "conventional-changelog-cli": "^5.0.0",
+    "cz-git": "^1.12.0",
+    "czg": "^1.12.0",
+    "eslint": "^9.32.0",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-config-turbo": "^2.5.5",
+    "eslint-plugin-only-warn": "^1.1.0",
+    "eslint-plugin-prettier": "^5.5.3",
+    "husky": "^9.1.7",
+    "lint-staged": "^16.1.2",
+    "prettier": "^3.6.2",
+    "tsup": "^8.5.0",
+    "tsx": "^4.20.3",
+    "typescript": "^5.9.2"
+  },
+  "config": {
+    "commitizen": {
+      "path": "node_modules/cz-git"
+    }
+  },
+  "lint-staged": {
+    "*.{js,ts}": [
+      "eslint --fix",
+      "prettier --write"
+    ],
+    "*.{json,md}": [
+      "prettier --write"
+    ]
+  }
+}
