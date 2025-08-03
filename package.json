@@ -6,6 +6,7 @@
     "dev": "tsx watch src/server.ts",
     "build": "tsup src --out-dir build",
     "start": "node build/server.js",
+    "test": "tsc --noEmit",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
     "lint-staged": "lint-staged",
     "prepare": "husky",
@@ -19,7 +20,9 @@
   "dependencies": {
     "@fastify/cors": "^11.1.0",
     "dotenv": "^17.2.1",
-    "fastify": "^5.4.0"
+    "fastify": "^5.4.0",
+    "fastify-type-provider-zod": "^5.0.2",
+    "zod": "^4.0.14"
   },
   "devDependencies": {
     "@commitlint/cli": "^19.8.1",
