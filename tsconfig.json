@@ -12,12 +12,14 @@
     "esModuleInterop": true,
     "skipLibCheck": true,
     "moduleResolution": "node16",
+    "resolveJsonModule": true,
 
     "baseUrl": "./",
     "paths": {
       "@domain/*": ["src/domain/*"],
       "@infrastructure/*": ["src/infrastructure/*"],
-      "@application/*": ["src/application/*"]
+      "@application/*": ["src/application/*"],
+      "@interfaces/*": ["src/interfaces/*"]
     }
   }
 }
