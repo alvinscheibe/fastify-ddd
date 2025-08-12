@@ -1,7 +1,5 @@
 # Fastify DDD Study Project
 
-![Test Status](https://github.com/alvinscheibe/fastify-ddd/actions/workflows/run-tests.yml/badge.svg)
-
 This project is a work-in-progress study aimed at implementing an API architecture using **Domain-Driven Design (DDD)** principles with **Fastify** and **TypeScript**.
 
 ## Description
