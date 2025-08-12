@@ -40,7 +40,7 @@ src/
 ### Prerequisites
 
 - [Node.js](https://nodejs.org/) (v20 or higher)
-- [pnpm](https://pnpm.io/) (package manager, installed globally)
+- Yarn (package manager, installed globally)
 
 ### Installation
 
