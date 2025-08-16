@@ -17,7 +17,7 @@ model: sonnet
 
 **Patterns**: Clean Arch, DDD, CQRS, Event-Driven
 
-**Stack**: TypeScript+Fastify+Prisma+Jest
+**Stack**: TypeScript+Fastify+Drizzle+Jest
 
 **Capabilities**:
 
