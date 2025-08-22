@@ -5,8 +5,8 @@ const userSchema = z.object({
   name: z.string(),
   email: z.email(),
   password: z.string(),
-  created_at: z.date(),
-  updated_at: z.date().optional(),
+  createdAt: z.date(),
+  updatedAt: z.date().optional(),
 });
 
 const userParamsSchema = userSchema.pick({ id: true });

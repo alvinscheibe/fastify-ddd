@@ -15,8 +15,8 @@ export const userMapper: Mapper<UserDto, User> = {
       id: user.id,
       name: user.name,
       email: user.email.value,
-      created_at: user.createdAt,
-      updated_at: user.updatedAt,
+      createdAt: user.createdAt,
+      updatedAt: user.updatedAt,
     };
   },
 };
