@@ -1,6 +1,7 @@
 import fastify from 'fastify';
 import { serializerCompiler, validatorCompiler, ZodTypeProvider } from 'fastify-type-provider-zod';
 import { errorHandler } from './error-handler';
+import { UserRepositoryDrizzle } from '@infrastructure/repositories/drizzle/user-repository-drizzle';
 
 export const app = fastify({
   logger: false,
@@ -14,3 +15,5 @@ app.get('/', (req, res) => {
 });
 
 app.setErrorHandler(errorHandler);
+
+app.decorate('userRepository', new UserRepositoryDrizzle());
